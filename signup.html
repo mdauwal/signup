@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            background: #eeeeee;
+            margin: 8px;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+        }
+        .left-column, .right-column {
+            padding: 1.5rem 2rem;
+            max-width: 350px;
+            max-height: 600px;
+            margin-top: 10px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            background: hsl(243, 75%, 58%);
+            text-align: center;
+        }
+        .left-column h2, p {
+            margin-bottom: 25px;
+            color: #ffffff;
+        }
+        h2 {
+            margin: 50px;
+            padding-bottom: 20px;
+        }
+        .login-btn {
+            text-align: center;
+            background-color: #7B66FF;
+            color: #ffffff;
+            padding: 15px 10px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+        .right-column {
+            background: #ffffff;
+        }
+        .right-column h1 {
+            text-align: center;
+            padding: 5px 10px 20px;
+        }
+        .right-column label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 14px;
+        }
+        .input-container input {
+            width: calc(100% - 20px);
+            padding: 10px 10px 10px 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .input-container i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #777;
+        }
+        .right-column button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4942e4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-box button:hover {
+            background-color: rgb(70, 70, 247);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+        .text{
+            line-height: 2.0;
+        }
+    </style>
+</head>
+<body>
+    <!-- page container -->
+    <div class="wrapper">
+        <!-- left-column -->
+        <div class="left-column">
+            <h2>Come join us!</h2>
+            <form>
+                <p class="text">
+                    We are so excited to have you here! If you haven't already, create
+                    an account to get access to exclusive offers, rewards, and
+                    discounts.
+                </p>
+                <button class="login-btn">Already have an account? Signin</button><br /><br />
+            </form>
+        </div>
+        <div class="right-column">
+            <h1>Signup</h1>
+            <form>
+                <div class="input-container">
+                    <i class="bx bxs-user"></i>
+                    <input type="text" name="username" id="user" placeholder="Username" required />
+                </div>
+                <div class="input-container">
+                    <i class="bx bx-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                </div>
+                <div class="input-container">
+                    <i class="bx bxs-lock-alt"></i>
+                    <input type="password" name="password" placeholder="Password" required />
+                </div>
+                <div class="input-container">
+                    <i class="bx bxs-lock-alt"></i>
+                    <input type="password" name="confirm-password" placeholder="Confirm Password" required />
+                </div>
+                <button class="signup-btn">Signup</button><br /><br />
+                <p style="color: black; text-align: center;">or signup with</p>
+                <div class="social-icons">
+                    <img src="fb-logo.png" alt="Facebook">
+                    <img src="google.png" alt="Twitter">
+                    <img src="linkedln.png" alt="Instagram">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
